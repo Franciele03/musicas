@@ -89,10 +89,29 @@ header {
     margin-left: 40px;
 }
  
+.categorias{
+    margin-top: 40;
+   
+}
+ 
 .categorias ul {
     list-style: none;
     padding: 0;
 }
+ 
+.categoria_nome{
+ 
+    filter: #bd001f(1);
+}
+ 
+.categoria_nome:hover{
+ 
+    filter: #bd001f(0);
+    transition: all 0.4 ease;
+    background-color: #ccc;
+    transition: background-color
+}
+ 
  
 .categorias li {
     padding: 10px;
@@ -102,11 +121,11 @@ header {
  
  
 .lista-produtos {
-    display: flex; /* Usando flexbox */
-    flex-wrap: wrap; /* Permitindo que os itens quebrem para a linha seguinte */
-    justify-content: space-between; /* Espaço igual entre os itens */
-    margin: 2rem auto; /* Centralizando a lista de produtos */
-    max-width: 90%; /* Limita a largura máxima da lista de produtos */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem auto;
+    max-width: 80%;
 }
  
 .produto {
@@ -114,10 +133,17 @@ header {
     text-align: center;
     border-radius: 8px;
     font-family: Poppins;
-    margin-bottom: 20px; /* Espaço entre os produtos */
-    width: 30%; /* Faz com que cada produto ocupe 30% da largura */
-    max-width: 400px; /* Limita a largura máxima de cada produto */
-    box-sizing: border-box; /* Garantindo que o padding não quebre o layout */
+    margin-bottom: 20px;
+    width: 30%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+ 
+.produto p{
+   
+    width: 90%;
+    font-size: 12px;
+   
 }
  
 .produto img {
@@ -135,6 +161,8 @@ header {
     cursor: pointer;
     border-radius: 5%;
 }
+ 
+ 
  
 .promocao {
     display: flex;
@@ -252,4 +280,19 @@ form button {
     margin: 5%;
     margin-bottom: 20%;
     font-family: Poppins;
+}
+ 
+.rodape{
+    display: flex;
+    border: none;
+    background: #ccc;
+    padding: 40px 50px;
+}
+ 
+.rodape h4{
+    font-size: 15px;
+    margin-left: 170px;
+    margin-top: -10;
+    font-family: Poppins;
+   
 }
