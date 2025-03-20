@@ -293,6 +293,6 @@ form button {
     font-size: 15px;
     margin-left: 170px;
     margin-top: -10;
-    font-family: Poppins;
+    font-family: Poppins; /* HTML5 display-role reset for older browsers */
    
 }
